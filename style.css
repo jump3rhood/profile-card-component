@@ -1,0 +1,113 @@
+:root {
+    font-size: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.main {
+    color: hsl(229, 23%, 23%);
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.background-circles img{
+    position: absolute;
+    z-index: -1;
+    width: 800px;
+}
+.circle1 {
+    top: -68%;
+    left: -126%;
+}
+.circle2{
+    bottom: -58%;
+    right: -139%;
+}
+.card {
+    width: 350px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__header {
+    background: url(images/bg-pattern-card.svg);
+    height: 150px;
+}
+.card__img{
+    width: 105px;
+    height: 105px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto 18px auto; 
+}
+.card__img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card__body{
+    padding: 0.4rem;
+    border-bottom:1px solid hsl(0, 3%, 86%);
+}
+.card__body h2{
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+.city {
+    padding: 0.2rem;
+    margin-bottom: 1.4rem;
+}
+.age{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+    padding: 0.4rem;
+}
+.card__body p,
+.card__footer p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.card__footer {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+.card__footer h5{
+    margin-bottom: 0.5rem;
+}
+.card__footer p {
+    letter-spacing: 1px;
+}
+/* 
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
+
+@media screen and (min-width: 1000px){
+    .circle1 {
+        top: -71%;
+        left: -8%;
+    }
+    .circle2{
+        bottom: -75%;
+        right: -10%;
+    }
+}
